@@ -1,0 +1,22 @@
+{
+    "assignableScopes": [
+      "/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"
+    ],
+    "description": "Can import/delete images to registry",
+    "Name": "AcrReplicate",
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/push/write",
+          "Microsoft.ContainerRegistry/registries/pull/read",
+          "Microsoft.ContainerRegistry/registries/artifacts/delete",
+          "Microsoft.ContainerRegistry/registries/read",
+          "Microsoft.ContainerRegistry/registries/importImage/action"
+        ],
+        "dataActions": [],
+        "notActions": [],
+        "notDataActions": []
+      }
+    ],
+    "roleType": "CustomRole"
+  }
